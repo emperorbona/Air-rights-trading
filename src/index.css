@@ -1,0 +1,189 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #f0f0f0, #ffffff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #97c9eb, #97c9ec);
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: left;
+  /* Align text to the left */
+  padding-left: 20px;
+  /* Add some padding for spacing from the edge */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+
+/* Navigation */
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.links a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #1745a7, #1745a8);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: linear-gradient(to right, #153d96, #153d97);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Listings */
+.listing {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.listing:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.listing strong {
+  color: #1745a7;
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #1745a7;
+}
+
+form input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #1745a7;
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+button {
+  background: linear-gradient(to right, #1745a7, #1745a8);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #153d96, #153d97);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .links a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .listing {
+    padding: 15px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .listing {
+    max-width: 95%;
+  }
+}
